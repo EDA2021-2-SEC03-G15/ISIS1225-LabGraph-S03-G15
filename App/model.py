@@ -30,6 +30,7 @@ from DISClib.ADT import list as lt
 from DISClib.Algorithms.Graphs import scc
 from DISClib.Algorithms.Graphs import dijsktra as djk
 from DISClib.Utils import error as error
+
 assert config
 
 """
@@ -178,6 +179,7 @@ def minimumCostPaths(analyzer, initialStation):
     Calcula los caminos de costo mínimo desde la estacion initialStation
     a todos los demas vertices del grafo
     """
+
     analyzer['paths'] = djk.Dijkstra(analyzer['connections'], initialStation)
     return analyzer
 
